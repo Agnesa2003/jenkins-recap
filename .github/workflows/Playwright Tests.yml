@@ -42,7 +42,7 @@ jobs:
           echo "PRACTICE_PASSWORD=${{ secrets.PRACTICE_PASSWORD }}" >> .env
 
       - name: Run Playwright tests
-        run: npm run tests:headless
+        run: npm run tests:headed
 
       - name: Upload test results
         if: always()
