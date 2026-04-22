@@ -16,7 +16,7 @@ test.describe("Test Group", () => {
     // expect(elements.length).toBeGreaterThanOrEqual(20);
   });
 
-  test("Verify that each of the 50 link elements within the <ul> tag is visible & clickable", async ({page,}) => {
+  test("Verify that each of the 50 link elements within the <ul> tag is visible & clickable ", async ({page,}) => {
 
     for (let e of elements) {
       await expect(e).toBeVisible();
